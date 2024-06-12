@@ -931,6 +931,7 @@ body {
     height: 100%;
     width: auto;
     margin: 0;
+    padding: 0% 3%;
   }
   .about .context .about-image img {
     max-width: 100%;
@@ -946,7 +947,7 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0;
-    padding: 2%;
+    padding: 0% 3%;
   }
   .about .context .about-inner-text h2 {
     margin-top: 10%;
