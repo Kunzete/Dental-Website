@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <nav class="nav1">
+      <div class="info">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa fa-location-dot"></i
+              ><span class="spans">Sialkot, Pakistan</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i
+              ><span class="spans">Info@gmail.com</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="nav2">
+      <div class="container">
+        <a href="#"><img src="./assets/img/logo.png.webp" alt="" /></a>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <a href="#" class="book">BOOKING NOW</a>
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-lines"></div>
+          <div class="hamburger-lines"></div>
+          <div class="hamburger-lines"></div>
+        </div>
+      </div>
+    </nav>
+    <aside class="menu" id="menu">
+      <i class="fa fa-xmark" id="close" style="font-size: 32px; font-weight: 0"></i>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PAGES</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </aside>
+    <main>
+      <div class="carousel">
+        <div class="intro-container">
+          <div class="welcome">
+            <h2>We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
+            <p>As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to offer you</p>
+            <div class="welcome-btn">
+              <a href="#">GET STARTED</a>
+              <a href="#">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="context">
+          <div class="about-image">
+            <img src="./assets/img/15.jpg" alt="">
+          </div>
+          <div class="about-text">
+            <div class="about-inner-text">
+              <div class="heading">
+                <h2>About Us</h2>
+                <div class="line"></div>  
+              </div>
+              <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis zurna, nec finibusmi velit advertisis. Proin vitae odin quis magna aliquet laciniae. Etiam auctor, nisi vel. Pellentesque ultrices nisl quam iaculis, nec pulvinar augue.</p>
+              <div class="skill">
+                <span class="tip"><h4>Experience Dentist</h4><h4>80%</h4></span>
+                <span class="fill1"></span>
+              </div>
+              <div class="skill">
+                <span class="tip"><h4>Modern Equipment</h4><h4>65%</h4></span>
+                <span class="fill2"></span>
+              </div>
+              <div class="skill">
+                <span class="tip"><h4>Friendly Staff</h4><h4>85%</h4></span>
+                <span class="fill3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.getElementById("menu")
+      const close = document.getElementById("close")
+      hamburger.addEventListener("click", () => {
+        const lines = document.querySelectorAll(".hamburger-lines");
+        lines.forEach((line) => {
+          line.classList.toggle("hamburger-active");
+        });
+        menu.classList.toggle("menu-active");
+      });
+
+      close.addEventListener("click", () => {
+        const lines = document.querySelectorAll(".hamburger-lines");
+        lines.forEach((line) => {
+          line.classList.toggle("hamburger-active");
+        });
+        menu.classList.toggle("menu-active");
+      });
+    </script>
+  </body>
+</html>
