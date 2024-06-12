@@ -955,4 +955,9 @@ body {
   .about .context .skill .tip h4 {
     font-size: 14px;
   }
+  .about .context .skill{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
 }
