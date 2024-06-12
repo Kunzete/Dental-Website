@@ -240,7 +240,8 @@ body {
   top: 0;
   bottom: 0;
   left: -200px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.235) !important;
+  backdrop-filter: blur(6px);
   -webkit-box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
   -moz-box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
   box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
