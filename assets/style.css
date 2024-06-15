@@ -609,7 +609,7 @@ body {
   text-align: center;
 }
 
-.carousel2{
+.carousel2 {
   background-image: url("./img/13.jpg");
   background-position-y: top;
   background-attachment: fixed;
@@ -623,7 +623,7 @@ body {
   align-items: center;
 }
 
-.carousel2::before{
+.carousel2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -633,66 +633,201 @@ body {
   background: rgb(89, 115, 143);
   background: linear-gradient(
     90deg,
-    rgba(54, 78, 101, 0.818) 0%,
+    rgba(47, 71, 94, 0.818) 0%,
     rgba(4, 6, 44, 0.885) 100%
   );
   z-index: 1;
 }
 
-.carousel2-content{
-  width: 65%;
+.carousel2-content {
+  width: 70%;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  gap: 0px;
   z-index: 2;
-  margin: 75px 0px;
+  margin: 80px 0px;
 }
 
-.carousel2-content .text .service{
+.carousel2-content .text .service {
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 20px 0px;
+}
+
+.carousel2-content .text .service .card {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  p {
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 22.4px;
+    margin: 8% 0px 20% 0px;
+    color: white;
+    text-align: left;
+    transition: all 0.3s linear;
+  }
+  img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+  }
+}
+.carousel2-content .text .service .card:hover {
+  p {
+    color: #00aeef;
+  }
 }
 
 .carousel2-content .text {
-  width: 50%;
+  width: 60%;
   height: auto;
-  border: 2px solid red;
 
-  .heading{
+  .heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    margin: 0%;
+    margin: 2% 0px 7% 0px;
     padding: 0;
 
-    h2{
+    h2 {
       font-size: 36px;
       font-family: Montserrat;
+      margin: 0% 0 5% 0;
       color: #ffffff;
     }
 
-    .line{
+    .line {
       padding: 2px;
-      width: 15%;
+      width: 10%;
       background-color: #00aeef;
     }
   }
-
 }
 
-.carousel2-content .video{
-  width: 50%;
+.carousel2-content .video {
+  width: auto;
   height: auto;
-  border: 2px solid red;
 
-  
-  img{
+  img {
     width: 100%;
     height: 100%;
+  }
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+
+  .head {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin: 7% 0px 3% 0px;
+      font-size: 36px;
+      font-family: Montserrat;
+      color: #333333;
+      font-weight: 600;
+    }
+
+    .line3 {
+      padding: 2px;
+      width: 70px;
+      background-color: #00aeef;
+    }
+  }
+}
+
+.container3 .table {
+  width: 70%;
+  height: auto;
+}
+
+.container3 .table table th {
+  background-color: #00aeef;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  height: 55px;
+}
+
+.container3 .table table th:nth-child(1) {
+  color: white;
+  width: 70%;
+  font-family: Montserrat;
+  padding: 0px 30px 0px 30px;
+  height: 47px;
+}
+.table {
+  margin: 0% 0px 1% 0px;
+}
+
+table {
+  border-spacing: 4px 4px;
+}
+
+.container3 .table table th:nth-child(2),
+th:nth-child(3) {
+  color: white;
+  width: 10%;
+  font-family: Montserrat;
+  padding: 0px 30px 0px 30px;
+  height: 47px;
+}
+
+.container3 .table table tr td {
+  background-color: #f4f4f4;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Montserrat;
+  padding: 0px 30px 0px 30px;
+  height: 50px;
+}
+
+.container3 .end {
+  padding: 0;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0px;
+
+  .btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 12px 37px;
+      border: 2px solid #00aeef;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: Montserrat;
+      color: white;
+      background-color: #00aeef;
+      transition: all.3s linear;
+      text-decoration: none;
+    }
+    a:hover {
+      background-color: transparent;
+      color: #00aeef;
+    }
   }
 }
 
@@ -891,7 +1026,7 @@ body {
     font-size: 14px;
     line-height: 0;
   }
-  .review{
+  .review {
     max-width: 100%;
     height: auto;
     display: flex;
@@ -905,20 +1040,35 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .review .card .inner-card{
+  .review .card .inner-card {
     padding: 20% 0px;
     max-width: 100%;
     height: auto;
   }
 
-  .review .card .inner-card h2{
+  .review .card .inner-card h2 {
     font-size: 34px;
   }
-  .review .card .inner-card i{
+  .review .card .inner-card i {
     font-size: 48px;
   }
-  .review .card .inner-card h5{
+  .review .card .inner-card h5 {
     font-size: 18px;
+  }
+  .carousel2-content {
+    width: 100%;
+    height: auto;
+    display: block;
+    gap: 0px;
+    z-index: 2;
+    margin: 50px 20px;
+  }
+  .carousel2-content .text {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel2-content .text .service {
+    gap: 10px;
   }
 }
 
@@ -1070,7 +1220,7 @@ body {
     font-size: 13px;
     line-height: 0;
   }
-  .review{
+  .review {
     max-width: 100%;
     height: auto;
     display: flex;
@@ -1084,18 +1234,18 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .review .card .inner-card{
+  .review .card .inner-card {
     max-width: 100%;
     height: auto;
   }
 
-  .review .card .inner-card h2{
+  .review .card .inner-card h2 {
     font-size: 28px;
   }
-  .review .card .inner-card i{
+  .review .card .inner-card i {
     font-size: 38px;
   }
-  .review .card .inner-card h5{
+  .review .card .inner-card h5 {
     font-size: 14px;
   }
 }
@@ -1210,7 +1360,7 @@ body {
     height: auto;
     overflow: hidden;
   }
-  .review{
+  .review {
     max-width: 100%;
     height: auto;
     display: flex;
@@ -1224,18 +1374,58 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .review .card .inner-card{
+  .review .card .inner-card {
     max-width: 100%;
     height: auto;
   }
 
-  .review .card .inner-card h2{
+  .review .card .inner-card h2 {
     font-size: 34px;
   }
-  .review .card .inner-card i{
+  .review .card .inner-card i {
     font-size: 52px;
   }
-  .review .card .inner-card h5{
+  .review .card .inner-card h5 {
     font-size: 17px;
+  }
+  .carousel2-content .text .service {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .carousel2-content .text .heading h2 {
+    font-size: 28px;
+  }
+  .carousle2-context .text .service .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container3 .head{
+    margin: 10% 0px 0px 0px;
+  }
+  .container3 .head h2{
+    font-size: 28px;
+    margin: 0px 0px 10% 0px;
+  }
+  .container3 .table{
+    margin: 0px 0px 0% 0px;
+    width: 100%;
+    height: auto;
+
+    table{
+      max-width: 100%;
+      height: auto;
+      th{
+        font-size: 12px;
+        text-wrap: pretty;
+      }
+      tr td{
+        font-size: 12px;
+        padding: 3% 5px;
+        text-align: left;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        text-wrap: pretty;
+      }
+    }
   }
 }
