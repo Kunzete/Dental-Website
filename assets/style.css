@@ -40,7 +40,8 @@ body {
 .loader {
   border: 12px solid #f3f3f3;
   -webkit-border-radius: 50%;
-  border-radius: 50%;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
   border-top: 12px solid #3498db;
   width: 120px;
   height: 120px;
@@ -272,7 +273,8 @@ body {
   top: 0;
   background-color: white;
   -webkit-box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
-  box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
+       box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
 }
 
 .nav2 .container {
@@ -382,7 +384,8 @@ body {
   left: 0;
   right: 0;
   -webkit-border-radius: 25px;
-  border-radius: 25px;
+  -moz-border-radius: 25px;
+       border-radius: 25px;
 }
 
 .nav2 .hamburger-lines:nth-child(1) {
@@ -464,7 +467,8 @@ body {
   left: -200px;
   background-color: white;
   -webkit-box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
-  box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
+  -moz-box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
+       box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
   max-width: 100vw;
   height: 100vh;
   z-index: 99999999999999999999999;
@@ -537,7 +541,8 @@ body {
   left: 0;
   background-color: white;
   -webkit-box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
-  box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
+  -moz-box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
+       box-shadow: 10px 0px 50px -19px rgba(133, 133, 133, 0.58);
   max-width: 100vw;
   height: 100vh;
   z-index: 99999999999999999999999;
@@ -553,7 +558,8 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  -moz-background-size: cover;
+       background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
@@ -605,6 +611,12 @@ body {
     left,
     rgba(54, 78, 101, 0.818) 0%,
     rgba(4, 6, 44, 0.885) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(54, 78, 101, 0.818)),
+    to(rgba(4, 6, 44, 0.885))
   );
   background: linear-gradient(
     90deg,
@@ -912,7 +924,8 @@ body {
   max-width: 100%;
   height: auto;
   -webkit-border-radius: 14px;
-  border-radius: 14px;
+  -moz-border-radius: 14px;
+       border-radius: 14px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -937,7 +950,8 @@ body {
   justify-content: center;
   padding: 20% 40px;
   -webkit-box-shadow: 0px 0px 35px -17px rgba(163, 158, 163, 1);
-  box-shadow: 0px 0px 35px -17px rgba(163, 158, 163, 1);
+  -moz-box-shadow: 0px 0px 35px -17px rgba(163, 158, 163, 1);
+       box-shadow: 0px 0px 35px -17px rgba(163, 158, 163, 1);
   color: #00aeef;
 }
 
@@ -974,7 +988,8 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  -moz-background-size: cover;
+       background-size: cover;
   position: relative;
   max-width: 100%;
   height: auto;
@@ -1024,6 +1039,12 @@ body {
     left,
     rgba(47, 71, 94, 0.818) 0%,
     rgba(4, 6, 44, 0.885) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(47, 71, 94, 0.818)),
+    to(rgba(4, 6, 44, 0.885))
   );
   background: linear-gradient(
     90deg,
@@ -1905,7 +1926,8 @@ th:nth-child(3) {
     top: 0;
     background-color: white;
     -webkit-box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
-    box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
+         box-shadow: 7px 24px 48px -37px rgba(0, 0, 0, 0.65);
   }
   .nav2 .container {
     width: 91%;
