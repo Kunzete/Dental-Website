@@ -1,3 +1,7 @@
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+const close = document.getElementById("close");
+
 document.addEventListener('DOMContentLoaded', function () {
   const animatedNumbers = document.querySelectorAll('.animated-number');
 
@@ -29,9 +33,6 @@ window.addEventListener('load', function () {
 });
 
 
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
-const close = document.getElementById("close");
 hamburger.addEventListener("click", () => {
   const lines = document.querySelectorAll(".hamburger-lines");
   lines.forEach((line) => {

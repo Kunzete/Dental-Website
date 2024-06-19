@@ -1501,7 +1501,157 @@ textarea:focus{
   color: #00aeef;
 }
 
-  @media (max-width: 1200px) {
+.container5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.container5 .container-inside{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 0px;
+}
+
+.container5 .container-inside .heading{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 0px 0px 50px 0px;
+
+  h2{
+    font-family: Montserrat;
+    margin: 0;
+    font-size: 36px;
+    color: #333333;
+    line-height: 50.4px;
+    font-weight: 600;
+  }
+
+  .line{
+    padding: 2px;
+    background-color: #00aeef;
+    width: 5%;
+  }
+}
+
+.container5 .container-inside .grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 82%;
+  height: auto;
+  gap: 30px;
+}
+
+.container5 .container-inside .grid .card{
+  max-width: 100%;
+  height: auto;
+  background-color: #F4F4F4;
+  margin: 0;
+  position: relative;  
+  transition: display .3s ease-in-out;
+
+
+  .info{
+    content: "";
+    position: absolute;
+    background: rgb(89, 115, 143);
+    background: linear-gradient(
+      90deg,
+      rgba(47, 71, 94, 0.818) 0%,
+      rgba(4, 6, 44, 0.885) 100%
+    );
+    max-width: 100%;
+    height: auto;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 2% 0px;
+
+    h5{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-size: 1.2vw;
+      font-family: Montserrat;
+      font-weight: 600;
+    }
+    p{
+      width: 100%;
+      text-align: center;
+      height: auto;
+      font-family: Montserrat;
+      font-size: .9vw;
+      line-height: 26px;
+    }
+  }
+
+  .socials{
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: all .3s ease;
+    opacity: 0;
+
+    i{
+      background-color: white;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      color: #00aeef;
+      border-radius: 50px;
+      font-size: 14px;
+      line-height: 40px;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  .socials i:hover{
+    background-color: #00aeef;
+    color: white;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.container5 .container-inside .grid .card:hover{
+  transition: opacity .4s ease-in-out;
+  .socials{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
   .nav2 .container {
     gap: 5px;
   }
@@ -1608,6 +1758,23 @@ textarea:focus{
     margin: 0% 0px;
     font-size: 14px;
     line-height: 0;
+  }
+  .container5 .container-inside .grid .card .info{
+    h5{
+      font-size: 1.5vw;
+      margin: 1% 0px 1% 0px;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+    p{
+      font-size: 2vw;
+      padding: 0;
+      font-size: 1.5vw;
+      margin: 1% 0px 2% 0px;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -1774,13 +1941,11 @@ textarea:focus{
     -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .review .card .inner-card {
     padding: 20% 0px;
     max-width: 100%;
     height: auto;
   }
-
   .review .card .inner-card h2 {
     font-size: 34px;
   }
@@ -1804,6 +1969,23 @@ textarea:focus{
   }
   .carousel2-content .text .service {
     gap: 10px;
+  }
+  .container5 .container-inside .grid .card .info{
+    h5{
+      font-size: 1.8vw;
+      margin: 1% 0px 0% 0px;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+    p{
+      font-size: 2vw;
+      padding: 0;
+      font-size: 1.5vw;
+      margin: 0% 0px 2% 0px;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -1901,7 +2083,6 @@ textarea:focus{
     font-size: 10px;
     padding: 10px 15px;
   }
-
   .intro-container {
     z-index: 99;
     color: white;
@@ -2049,12 +2230,10 @@ textarea:focus{
     -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
-
   .review .card .inner-card {
     max-width: 100%;
     height: auto;
   }
-
   .review .card .inner-card h2 {
     font-size: 28px;
   }
@@ -2107,6 +2286,34 @@ textarea:focus{
   .container4 .container-inside a{
     margin: 10% 0px 5% 0px;
     font-size: 14px;
+  }
+  .container5 .container-inside .heading{
+    h2{
+      font-size: 5vw;
+    }
+    .line{
+      width: 10vw;
+    }
+  }
+  .container5 .container-inside .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container5 .container-inside .grid .card .info{
+    width: 100%;
+    h5{
+      font-size: 2.5vw;
+      margin: 0% 0px 0% 0px;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+    p{
+      font-size: 2vw;
+      padding: 0;
+      margin: 0% 0px 0% 0px;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -2264,12 +2471,10 @@ textarea:focus{
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
-
   .review .card .inner-card {
     max-width: 100%;
     height: auto;
   }
-
   .review .card .inner-card h2 {
     font-size: 34px;
   }
@@ -2359,5 +2564,34 @@ textarea:focus{
     font-size: 11px;
     width: 70%;
     text-align: center;
+  }
+  .container5 .container-inside .heading{
+    h2{
+      font-size: 7vw;
+    }
+    .line{
+      width: 20vw;
+    }
+  }
+  .container5 .container-inside .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container5 .container-inside .grid .card .info{
+    width: 100%;
+    height: auto;
+    h5{
+      font-size: 4.5vw;
+      margin: 0% 0px 0% 0px;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+    p{
+      padding: 0;
+      font-size: 3vw;
+      margin: 0% 0px 0% 0px;
+      width: 100%;
+      height: auto;
+    }
   }
 }
